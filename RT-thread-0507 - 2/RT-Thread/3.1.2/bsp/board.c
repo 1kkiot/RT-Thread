@@ -149,7 +149,7 @@ void rt_hw_board_init(void)
     HAL_Init();
     SystemClock_Config();
 	MX_GPIO_Init();
-	MX_USART1_UART_Init();
+	//MX_USART1_UART_Init();
 #ifdef RT_USING_HEAP
     rt_system_heap_init((void *)HEAP_BEGIN, (void *)HEAP_END);
 #endif

@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xE</Define>
               <Undefine></Undefine>
-              <IncludePath>.\App;.\Base;.\Config;.\Core;.\HAL\STM32F1xx_HAL_Driver\Inc;.\HAL\STM32F1xx_HAL_Driver\Inc\Legacy;.\User;.\Sys;.\RT-Thread\3.1.2\bsp;.\RT-Thread\3.1.2\include;.\RT-Thread\3.1.2\include\libc;.\RT-Thread\3.1.2\components\finsh</IncludePath>
+              <IncludePath>.\App;.\Base;.\Config;.\Core;.\HAL\STM32F1xx_HAL_Driver\Inc;.\HAL\STM32F1xx_HAL_Driver\Inc\Legacy;.\User;.\Sys;.\RT-Thread\3.1.2\bsp;.\RT-Thread\3.1.2\include;.\RT-Thread\3.1.2\include\libc;.\RT-Thread\3.1.2\components\finsh;.\RT-Thread\3.1.2\components\drivers\include;.\RT-Thread\3.1.2\components\drivers\include\drivers;.\RT-Thread\3.1.2\components\drivers\include\ipc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -562,6 +562,16 @@
               <FileType>5</FileType>
               <FilePath>.\Sys\uart.h</FilePath>
             </File>
+            <File>
+              <FileName>uartcmd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Sys\uartcmd.c</FilePath>
+            </File>
+            <File>
+              <FileName>uartcmd.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Sys\uartcmd.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -708,31 +718,6 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>TR-Thread_task</GroupName>
-          <Files>
-            <File>
-              <FileName>task.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Task\task.c</FilePath>
-            </File>
-            <File>
-              <FileName>task.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Task\task.h</FilePath>
-            </File>
-            <File>
-              <FileName>runtask.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Task\runtask.c</FilePath>
-            </File>
-            <File>
-              <FileName>runtask.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Task\runtask.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
           <GroupName>TR-Thread_finsh</GroupName>
           <Files>
             <File>
@@ -764,6 +749,46 @@
               <FileName>symbol.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\RT-Thread\3.1.2\components\finsh\symbol.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>TR-Thread_derivce</GroupName>
+          <Files>
+            <File>
+              <FileName>serial.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\RT-Thread\3.1.2\components\drivers\serial\serial.c</FilePath>
+            </File>
+            <File>
+              <FileName>completion.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\RT-Thread\3.1.2\components\drivers\src\completion.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>TR-Thread_task</GroupName>
+          <Files>
+            <File>
+              <FileName>task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Task\task.c</FilePath>
+            </File>
+            <File>
+              <FileName>task.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Task\task.h</FilePath>
+            </File>
+            <File>
+              <FileName>runtask.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Task\runtask.c</FilePath>
+            </File>
+            <File>
+              <FileName>runtask.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Task\runtask.h</FilePath>
             </File>
           </Files>
         </Group>

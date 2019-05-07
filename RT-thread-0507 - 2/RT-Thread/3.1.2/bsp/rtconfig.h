@@ -6,6 +6,7 @@
 
 //#include "RTE_Components.h"
 
+#define RT_USING_DEVICE_OPS
 // <<< Use Configuration Wizard in Context Menu >>>
 // <h>Basic Configuration
 // <o>Maximal level of thread priority <8-256>

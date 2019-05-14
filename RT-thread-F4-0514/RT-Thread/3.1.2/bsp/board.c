@@ -14,6 +14,8 @@
 #include <rthw.h>
 #include <rtthread.h>
 #include "board.h"
+//#include "finsh.h"
+#include "shell.h"
 #include "stm32f4xx_hal.h"
 
 #include "SysGpio.h"
@@ -160,10 +162,11 @@ void rt_hw_board_init(void)
     HAL_Init();
     SystemClock_Config();
 	MX_GPIO_Init();
-	MX_USART1_UART_Init();
+	//MX_USART1_UART_Init();
 #ifdef RT_USING_HEAP
     rt_system_heap_init((void *)HEAP_BEGIN, (void *)HEAP_END);
 #endif
+	hw_usart_init();
 #ifdef RT_USING_COMPONENTS_INIT
     rt_components_board_init();
 #endif

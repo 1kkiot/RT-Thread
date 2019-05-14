@@ -49,7 +49,7 @@ int task_init()
 	INIT_APP_EXPORT(task_init);
 #endif
 /* 导出到 msh 命令列表中 */
-//MSH_CMD_EXPORT(task_init, run signal sample);
+MSH_CMD_EXPORT(task_init, run signal sample);
 
 
 

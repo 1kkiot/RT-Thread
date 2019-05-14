@@ -19,19 +19,14 @@ extern UartDMA_t Uart1DMA;
 extern UartDMA_t Uart2DMA;
 
 extern UART_HandleTypeDef huart1;
-extern UART_HandleTypeDef huart2;
-extern UART_HandleTypeDef huart3;
+
 extern DMA_HandleTypeDef hdma_usart1_rx;
 extern DMA_HandleTypeDef hdma_usart1_tx;
-extern DMA_HandleTypeDef hdma_usart2_rx;
-extern DMA_HandleTypeDef hdma_usart2_tx;
-extern DMA_HandleTypeDef hdma_usart3_rx;
-extern DMA_HandleTypeDef hdma_usart3_tx;
+
 
 void MX_DMA_Init(void);
 void MX_USART1_UART_Init(void);
-void MX_USART2_UART_Init(void);
-void MX_USART3_UART_Init(void);
+
 void HAL_UART_MspInit(UART_HandleTypeDef* uartHandle);
 void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle);
 void UsartReceive_IDLE(UART_HandleTypeDef *huart);

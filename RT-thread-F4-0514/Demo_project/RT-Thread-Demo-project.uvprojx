@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F407xx</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Core;..\HAL\STM32F4xx_HAL_Driver\Inc;..\HAL\STM32F4xx_HAL_Driver\Inc\Legacy;..\User;..\HAL;..\Sys;..\Task;..\RT-Thread\3.1.2\bsp;..\RT-Thread\3.1.2\include;..\RT-Thread\3.1.2\include\libc;..\RT-Thread\3.1.2\src</IncludePath>
+              <IncludePath>..\Core;..\HAL\STM32F4xx_HAL_Driver\Inc;..\HAL\STM32F4xx_HAL_Driver\Inc\Legacy;..\User;..\HAL;..\Sys;..\Task;..\RT-Thread\3.1.2\bsp;..\RT-Thread\3.1.2\include;..\RT-Thread\3.1.2\include\libc;..\RT-Thread\3.1.2\src;..\RT-Thread\3.1.2\components\finsh;..\RT-Thread\3.1.2\components\drivers\include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -584,6 +584,76 @@
               <FileName>timer.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\RT-Thread\3.1.2\src\timer.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>RT_Thread_finsh</GroupName>
+          <Files>
+            <File>
+              <FileName>cmd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\RT-Thread\3.1.2\components\finsh\cmd.c</FilePath>
+            </File>
+            <File>
+              <FileName>finsh.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\RT-Thread\3.1.2\components\finsh\finsh.h</FilePath>
+            </File>
+            <File>
+              <FileName>finsh_api.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\RT-Thread\3.1.2\components\finsh\finsh_api.h</FilePath>
+            </File>
+            <File>
+              <FileName>msh.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\RT-Thread\3.1.2\components\finsh\msh.c</FilePath>
+            </File>
+            <File>
+              <FileName>msh.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\RT-Thread\3.1.2\components\finsh\msh.h</FilePath>
+            </File>
+            <File>
+              <FileName>msh_cmd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\RT-Thread\3.1.2\components\finsh\msh_cmd.c</FilePath>
+            </File>
+            <File>
+              <FileName>msh_file.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\RT-Thread\3.1.2\components\finsh\msh_file.c</FilePath>
+            </File>
+            <File>
+              <FileName>shell.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\RT-Thread\3.1.2\components\finsh\shell.c</FilePath>
+            </File>
+            <File>
+              <FileName>shell.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\RT-Thread\3.1.2\components\finsh\shell.h</FilePath>
+            </File>
+            <File>
+              <FileName>symbol.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\RT-Thread\3.1.2\components\finsh\symbol.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>RT_Thread_dev</GroupName>
+          <Files>
+            <File>
+              <FileName>serial.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\RT-Thread\3.1.2\components\drivers\serial\serial.c</FilePath>
+            </File>
+            <File>
+              <FileName>completion.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\RT-Thread\3.1.2\components\drivers\src\completion.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -154,9 +154,11 @@
 #if defined(RTE_USING_DEVICE)
 #define RT_USING_DEVICE
 #define RT_USING_SERIAL
-#define BSP_USING_UART2
+#define BSP_USING_UART1
 #endif
 
+#define RTE_USING_FINSH
+#define FINSH_USING_SYMTAB
 #if defined(RTE_USING_FINSH)
 
 // <h>Finsh Configuration

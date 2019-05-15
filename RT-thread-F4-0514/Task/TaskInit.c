@@ -1,7 +1,7 @@
 #include "TaskInit.h"
 
 #define THREAD1_STACK_SIZE			256
-#define THREAD1_PRIORITY			3
+#define THREAD1_PRIORITY			4
 #define THREAD1_TIMESLICE			10
 
 #define THREAD2_STACK_SIZE			256

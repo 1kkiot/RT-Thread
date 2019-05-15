@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F407xx</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Core;..\HAL\STM32F4xx_HAL_Driver\Inc;..\HAL\STM32F4xx_HAL_Driver\Inc\Legacy;..\User;..\HAL;..\Sys;..\Task;..\RT-Thread\3.1.2\bsp;..\RT-Thread\3.1.2\include;..\RT-Thread\3.1.2\include\libc;..\RT-Thread\3.1.2\src;..\RT-Thread\3.1.2\components\finsh;..\RT-Thread\3.1.2\components\drivers\include</IncludePath>
+              <IncludePath>..\Core;..\HAL\STM32F4xx_HAL_Driver\Inc;..\HAL\STM32F4xx_HAL_Driver\Inc\Legacy;..\User;..\HAL;..\Sys;..\Task;..\RT-Thread\3.1.2\bsp;..\RT-Thread\3.1.2\include;..\RT-Thread\3.1.2\include\libc;..\RT-Thread\3.1.2\src;..\RT-Thread\3.1.2\components\finsh;..\RT-Thread\3.1.2\components\drivers\include;..\App\sfud\inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -471,6 +471,23 @@
         </Group>
         <Group>
           <GroupName>App</GroupName>
+          <Files>
+            <File>
+              <FileName>sfud_port.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\App\sfud\port\sfud_port.c</FilePath>
+            </File>
+            <File>
+              <FileName>sfud.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\App\sfud\src\sfud.c</FilePath>
+            </File>
+            <File>
+              <FileName>sfud_sfdp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\App\sfud\src\sfud_sfdp.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>RT_Thread_bsp</GroupName>

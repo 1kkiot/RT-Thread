@@ -159,6 +159,7 @@
 
 #define RTE_USING_FINSH
 #define FINSH_USING_SYMTAB
+
 #if defined(RTE_USING_FINSH)
 
 // <h>Finsh Configuration

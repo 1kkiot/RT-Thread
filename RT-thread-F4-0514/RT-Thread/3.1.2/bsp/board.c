@@ -14,7 +14,7 @@
 #include <rthw.h>
 #include <rtthread.h>
 #include "board.h"
-//#include "finsh.h"
+
 #include "shell.h"
 #include "stm32f4xx_hal.h"
 
@@ -167,6 +167,7 @@ void rt_hw_board_init(void)
     rt_system_heap_init((void *)HEAP_BEGIN, (void *)HEAP_END);
 #endif
 	hw_usart_init();
+
 #ifdef RT_USING_COMPONENTS_INIT
     rt_components_board_init();
 #endif
